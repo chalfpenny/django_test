@@ -78,9 +78,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'mysite_db',
-        'USER': 'postgres',
-        'PASSWORD': '9100Blue',
-        'HOST': 'localhost',
+        'USER': 'charles',
+        'PASSWORD': 'pass#1234',
+        'HOST': 'glenhaven-db.postgres.database.azure.com',
         'PORT': '5432',
     }
 }
