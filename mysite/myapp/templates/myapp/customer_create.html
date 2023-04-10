@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+<div class="container-fluid mt-3 w3-border w3-padding w3-round ws-grey">
+    <form>
+        {% for field in form %}
+
+            <div class="form-floating  mt-3 mb-3 ">
+                <input type="text" class="form-control .input-sm" id="{{field.name}}" name="{{field.name}}" placeholder="{{ field.label }}">
+                <label for="{{field.name}}">{{ field.label }}</label>
+            </div>
+
+        {% endfor %}
+    </form>
+
+
+    <br>
+    <br>
+
+    <form>
+        {% for field in form %}
+            <div class="form-group row mt-3 mb-3 ">
+                <label for="{{field.name}}" class="col-sm-1 col-form-label">{{ field.label }}:</label>
+    
+                <div class="col-sm-4">
+                    <input type="text" class="form-control .input-sm" id="{{field.name}}" placeholder="{{ field.label }}">
+                </div>
+            </div>
+        {% endfor %}
+        
+    </form>
+
+</div>
+
+{% endblock %}

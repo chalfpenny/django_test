@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+{% if customer_list %}
+    <ul>
+    {% for customer in customer_list %}
+        <li>{{ customer.id }} {{ customer.name }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No customers are available.</p>
+{% endif %}
+
+
+{% endblock %}
